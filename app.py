@@ -9,8 +9,8 @@ app = Flask(__name__)
 
 # ====== REPLACE THESE ======
 VERIFY_TOKEN = "my_verify_token"
-ACCESS_TOKEN = "EAARZAVGHPLpQBQymH7Qt5SYSv7HR4c1hrS0g3N0VWVIQHE3HXYxUsV7POPA4l4hs7KG3gQEBrXuWDafADTrcfcg0WVD6XNOObRkurwLENqSWZB1Gl9JjkuhJzxQF8ZCMfgeyzHwHfHaZBSjIzu30Gxj6Dk5iThBrdupxigWCDKMlor1FUfO3LK68RifZCiqJpwAZDZD"
-PHONE_NUMBER_ID = "1040714015786345"
+ACCESS_TOKEN = "EAARZAVGHPLpQBQzx6OdybIic1crCf0m9dr24sa0rHx16ZAJHRzaekCZBuDvZANM4JUWhwgj1mVAU4SMZCUZCedIlihHgaFNSa8GXJzyP1j4ZCynKTFW35ZAvnccVTEsaGdSxN5hX53DUoZBph3zLZAVEpm8IKZBd4F8B8R3uiZCorpKbtlnIH9RHeqa6wVURfOpILusc6gZDZD"
+PHONE_NUMBER_ID = "1005973195933095"
 # ===========================
 
 DISEASE_MANAGEMENT = {
@@ -127,4 +127,5 @@ def send_whatsapp_message(to, text):
     requests.post(url, headers=headers, json=payload)
 
 if __name__ == "__main__":
+
     app.run(port=5000)
